@@ -1,0 +1,32 @@
+media:
+  - name: images
+    label: Images
+    input: public/images
+    output: /images
+    categories: [image]
+
+collections:
+  - name: blog
+    label: Blog Posts
+    path: src/content/blog
+    filename: '{fields.slug}'
+    extension: md
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: pubDate
+        label: Publication Date
+        type: date
+      - name: heroImage
+        label: Hero Image
+        type: image
+      - name: slug
+        label: URL Slug (lowercase-with-hyphens)
+        type: string
+      - name: body
+        label: Post Body
+        type: rich-text
