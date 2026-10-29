@@ -1,14 +1,12 @@
 media:
-  - name: images
-    label: Images
-    input: public/images
-    output: /images
-    categories: [image]
+  input: public/images
+  output: /images
 
-collections:
+content:
   - name: blog
     label: Blog Posts
-    path: src/content/blog/
+    type: collection
+    path: src/content/blog
     filename: '{fields.slug}'
     extension: md
     fields:
@@ -30,3 +28,4 @@ collections:
       - name: body
         label: Post Body
         type: rich-text
+
