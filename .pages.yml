@@ -8,7 +8,7 @@ media:
 collections:
   - name: blog
     label: Blog Posts
-    path: src/content/blog
+    path: src/content/blog/
     filename: '{fields.slug}'
     extension: md
     fields:
